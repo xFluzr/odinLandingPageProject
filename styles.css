@@ -1,6 +1,7 @@
+
 body{
     margin:0;
-    padding: 0;
+    padding: 0; 
     height: 200vh;
 }
 
@@ -10,36 +11,42 @@ body{
     height: 100%;
 }
 
-
+/*Landing page*/
 .landing,.images-section{
     flex: 4;
 }
 .landing{
     width: 100%;
     background-color: #1F2937;
+    display: flex;
+    justify-content: center;
 }
 .landing-content{
     display: flex;
     flex-direction: column;
+    height: 100%;
+    
+    margin: 0rem auto;
 }
 .navbar{
     display: flex;
-    color:#fff;
-
+    margin: 2rem 0rem;
 }
 .navbar-rightside,.navbar-leftside{
     flex: 1;
 }
 .navbar-leftside{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    color:#f9faf8;
     font-size: 24px;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .navbar-rightside{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 .navbar-navigation{
     list-style: none;
@@ -47,23 +54,65 @@ body{
     gap: 10px;
 }
 .navbar-navigation > .link a{
-    color: #fff;
+    font-size: 18px;
+    color: #e5e7eb;
     text-decoration: none;
 }
+.content{
+    height:100% ;
+    display: flex;
+    gap: 100px;
+    margin: 5rem 0rem;
+}
+.content-leftside{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.content-rightside{
+    flex: 1;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+.content-leftside h1{
+    color:#f9faf8;
+    font-size: 48px;
+    font-weight: extra-bold;
+    width: 70%;
+    margin: 0;
+}
+.content-leftside p{
+    font-size: 18px;
+    color:#e5e7eb;
+    width: 50%;
+    flex: 7;
+}
+.btn{
+    padding: 0.5rem 2.5rem;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+}
+.sign-up-noborder{
+    background: #3883f6;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    align-self: flex-start;
+    flex:1;   
+}
 
-
-
-
-
+/*Images*/
 
 
 .quote{
     flex:2.5
 }
 
-.sign-up{
-    flex:2;
-}
+
 .footer{
     display: flex;
     justify-content: center;
