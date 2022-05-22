@@ -32,6 +32,11 @@ body{
     display: flex;
     margin: 2rem 0rem;
 }
+.logo{
+    color:#fff;
+    font-size: 24px;
+    font-weight: bold;
+}
 .navbar-rightside,.navbar-leftside{
     flex: 1;
 }
@@ -171,6 +176,7 @@ body{
 
 }
 
+/*Call to action*/
 .sign-up-section{
     flex: 2.5;
     display: flex;
@@ -203,6 +209,8 @@ body{
     font-size: 24px;
     font-weight: bold;
 }
+
+/*Footer*/
 .footer{
     display: flex;
     justify-content: center;
